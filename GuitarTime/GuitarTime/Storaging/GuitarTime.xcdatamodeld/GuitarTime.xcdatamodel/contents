@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22F82" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Chord" representedClassName="Chord" syncable="YES" codeGenerationType="class">
+        <attribute name="barre" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="chordname" optional="YES" attributeType="String"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="finger1" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finger2" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finger3" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="finger4" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mutedStrings" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CompletedForStats" representedClassName="CompletedForStats" syncable="YES" codeGenerationType="class">
+        <attribute name="completedModule" optional="YES" attributeType="String"/>
+        <attribute name="doneDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="omc" optional="YES" attributeType="String"/>
+        <attribute name="pfc" optional="YES" attributeType="String"/>
+        <attribute name="totalTimeSeconds" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="GuitarClass" representedClassName="GuitarClass" syncable="YES" codeGenerationType="class">
+        <attribute name="classchords" optional="YES" attributeType="String"/>
+        <attribute name="classdescription" optional="YES" attributeType="String"/>
+        <attribute name="classid" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="classtitle" optional="YES" attributeType="String"/>
+        <attribute name="classtype" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="metronome" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="savestats" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="GuitarModule" representedClassName="GuitarModule" syncable="YES" codeGenerationType="class">
+        <attribute name="moduleclasses" optional="YES" attributeType="String"/>
+        <attribute name="modulegrade" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="moduletitle" optional="YES" attributeType="String"/>
+    </entity>
+</model>

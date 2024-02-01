@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10269F432AB9E1D500DA83F1 /* VisualTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10269F422AB9E1D500DA83F1 /* VisualTimerViewModel.swift */; };
+		10269F462AB9EDBC00DA83F1 /* PracticeCompletedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10269F452AB9EDBC00DA83F1 /* PracticeCompletedViewModel.swift */; };
+		102F661A2AAB8F5E0078C380 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102F66192AAB8F5E0078C380 /* StatisticsView.swift */; };
+		103D95022AA8BC7900F6409F /* NewChordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103D95012AA8BC7900F6409F /* NewChordView.swift */; };
+		103D95042AA8F81700F6409F /* RemoveContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103D95032AA8F81700F6409F /* RemoveContentView.swift */; };
+		103D95062AA904B900F6409F /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103D95052AA904B900F6409F /* MonthCalendarView.swift */; };
+		10407C2F2AA541C000CE4AEA /* ChordCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407C2E2AA541C000CE4AEA /* ChordCarrouselView.swift */; };
+		104FEC782A96CA920052757D /* GuitarTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC772A96CA920052757D /* GuitarTimeApp.swift */; };
+		104FEC7A2A96CA920052757D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC792A96CA920052757D /* ContentView.swift */; };
+		104FEC7C2A96CA970052757D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104FEC7B2A96CA970052757D /* Assets.xcassets */; };
+		104FEC7F2A96CA970052757D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104FEC7E2A96CA970052757D /* Preview Assets.xcassets */; };
+		104FEC812A96CA970052757D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC802A96CA970052757D /* Persistence.swift */; };
+		104FEC842A96CA970052757D /* GuitarTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC822A96CA970052757D /* GuitarTime.xcdatamodeld */; };
+		104FEC8E2A96CA980052757D /* GuitarTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC8D2A96CA980052757D /* GuitarTimeTests.swift */; };
+		104FEC982A96CA980052757D /* GuitarTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC972A96CA980052757D /* GuitarTimeUITests.swift */; };
+		104FEC9A2A96CA980052757D /* GuitarTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FEC992A96CA980052757D /* GuitarTimeUITestsLaunchTests.swift */; };
+		104FECAB2A96DF840052757D /* PersistenceDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECAA2A96DF840052757D /* PersistenceDataModels.swift */; };
+		104FECAD2A97727E0052757D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECAC2A97727E0052757D /* TabBarView.swift */; };
+		104FECAF2A9779370052757D /* ModulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECAE2A9779370052757D /* ModulesView.swift */; };
+		104FECB12A97879F0052757D /* StringsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECB02A97879F0052757D /* StringsFile.swift */; };
+		104FECB32A978AF50052757D /* ModuleDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECB22A978AF50052757D /* ModuleDescriptionView.swift */; };
+		104FECB52A97A2BF0052757D /* PracticeRoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECB42A97A2BF0052757D /* PracticeRoutineView.swift */; };
+		104FECB72A97A64D0052757D /* PreviewMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECB62A97A64D0052757D /* PreviewMocks.swift */; };
+		104FECB92A97D44F0052757D /* ChordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECB82A97D44F0052757D /* ChordView.swift */; };
+		104FECBB2A97EED10052757D /* ClassButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECBA2A97EED10052757D /* ClassButtonGroup.swift */; };
+		104FECBD2A97FA220052757D /* PracticeCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECBC2A97FA220052757D /* PracticeCompletedView.swift */; };
+		104FECBF2A980A250052757D /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECBE2A980A250052757D /* PersistenceService.swift */; };
+		1067C31C2A9A7417004A1FC8 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C31B2A9A7417004A1FC8 /* ToolsView.swift */; };
+		1067C31F2A9A7761004A1FC8 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C31E2A9A7761004A1FC8 /* MetronomeView.swift */; };
+		1067C3212A9A9E1B004A1FC8 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C3202A9A9E1A004A1FC8 /* CircularButton.swift */; };
+		1067C3232A9AA325004A1FC8 /* ChordListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C3222A9AA325004A1FC8 /* ChordListView.swift */; };
+		107351412AB118D500EA24EB /* VisualTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107351402AB118D500EA24EB /* VisualTimer.swift */; };
+		107440C12AAE552F00B3F15B /* StatisticsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107440C02AAE552F00B3F15B /* StatisticsHelper.swift */; };
+		107440C32AAE591B00B3F15B /* CustomShadowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107440C22AAE591B00B3F15B /* CustomShadowCell.swift */; };
+		107440C62AAE602500B3F15B /* StatisticsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107440C52AAE602500B3F15B /* StatisticsModel.swift */; };
+		107440C92AAF472600B3F15B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107440C82AAF472600B3F15B /* HomeView.swift */; };
+		109D176C2ADDC5A700F6424F /* PracticeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109D176B2ADDC5A700F6424F /* PracticeRouter.swift */; };
+		10A7D0ED2AE1C36200D55604 /* MetronomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7D0EC2AE1C36200D55604 /* MetronomeViewModel.swift */; };
+		10C3DE592A98D0D700768ED7 /* NewModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3DE582A98D0D700768ED7 /* NewModuleView.swift */; };
+		10C3DE5B2A98DE4300768ED7 /* NewModuleClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3DE5A2A98DE4300768ED7 /* NewModuleClassListView.swift */; };
+		10C3DE5D2A98F5CD00768ED7 /* ModuleDeletableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C3DE5C2A98F5CD00768ED7 /* ModuleDeletableCell.swift */; };
+		10F4A1A92AAA1AE400B044E2 /* CalendarSheetInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4A1A82AAA1AE400B044E2 /* CalendarSheetInfoView.swift */; };
+		10F4A1AB2AAA22A300B044E2 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4A1AA2AAA22A300B044E2 /* CalendarHelper.swift */; };
+		10F4A1AD2AAA4D1600B044E2 /* ExportContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4A1AC2AAA4D1600B044E2 /* ExportContentView.swift */; };
+		10F4A1AF2AAA8A0400B044E2 /* ImportContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4A1AE2AAA8A0400B044E2 /* ImportContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		104FEC8A2A96CA980052757D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104FEC6C2A96CA920052757D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104FEC732A96CA920052757D;
+			remoteInfo = GuitarTime;
+		};
+		104FEC942A96CA980052757D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104FEC6C2A96CA920052757D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104FEC732A96CA920052757D;
+			remoteInfo = GuitarTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10269F422AB9E1D500DA83F1 /* VisualTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualTimerViewModel.swift; sourceTree = "<group>"; };
+		10269F452AB9EDBC00DA83F1 /* PracticeCompletedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCompletedViewModel.swift; sourceTree = "<group>"; };
+		102F66192AAB8F5E0078C380 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		103D95012AA8BC7900F6409F /* NewChordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChordView.swift; sourceTree = "<group>"; };
+		103D95032AA8F81700F6409F /* RemoveContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveContentView.swift; sourceTree = "<group>"; };
+		103D95052AA904B900F6409F /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MonthCalendarView.swift; path = GuitarTime/Scenes/ToolsFlow/MonthCalendarView.swift; sourceTree = SOURCE_ROOT; };
+		10407C2E2AA541C000CE4AEA /* ChordCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordCarrouselView.swift; sourceTree = "<group>"; };
+		104FEC742A96CA920052757D /* GuitarTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		104FEC772A96CA920052757D /* GuitarTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarTimeApp.swift; sourceTree = "<group>"; };
+		104FEC792A96CA920052757D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		104FEC7B2A96CA970052757D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		104FEC7E2A96CA970052757D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		104FEC802A96CA970052757D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		104FEC832A96CA970052757D /* GuitarTime.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GuitarTime.xcdatamodel; sourceTree = "<group>"; };
+		104FEC892A96CA980052757D /* GuitarTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		104FEC8D2A96CA980052757D /* GuitarTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarTimeTests.swift; sourceTree = "<group>"; };
+		104FEC932A96CA980052757D /* GuitarTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuitarTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		104FEC972A96CA980052757D /* GuitarTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarTimeUITests.swift; sourceTree = "<group>"; };
+		104FEC992A96CA980052757D /* GuitarTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		104FECAA2A96DF840052757D /* PersistenceDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceDataModels.swift; sourceTree = "<group>"; };
+		104FECAC2A97727E0052757D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		104FECAE2A9779370052757D /* ModulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesView.swift; sourceTree = "<group>"; };
+		104FECB02A97879F0052757D /* StringsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsFile.swift; sourceTree = "<group>"; };
+		104FECB22A978AF50052757D /* ModuleDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDescriptionView.swift; sourceTree = "<group>"; };
+		104FECB42A97A2BF0052757D /* PracticeRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeRoutineView.swift; sourceTree = "<group>"; };
+		104FECB62A97A64D0052757D /* PreviewMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMocks.swift; sourceTree = "<group>"; };
+		104FECB82A97D44F0052757D /* ChordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordView.swift; sourceTree = "<group>"; };
+		104FECBA2A97EED10052757D /* ClassButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassButtonGroup.swift; sourceTree = "<group>"; };
+		104FECBC2A97FA220052757D /* PracticeCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCompletedView.swift; sourceTree = "<group>"; };
+		104FECBE2A980A250052757D /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		1067C31B2A9A7417004A1FC8 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		1067C31E2A9A7761004A1FC8 /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
+		1067C3202A9A9E1A004A1FC8 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		1067C3222A9AA325004A1FC8 /* ChordListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChordListView.swift; sourceTree = "<group>"; };
+		107351402AB118D500EA24EB /* VisualTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualTimer.swift; sourceTree = "<group>"; };
+		107440C02AAE552F00B3F15B /* StatisticsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsHelper.swift; sourceTree = "<group>"; };
+		107440C22AAE591B00B3F15B /* CustomShadowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShadowCell.swift; sourceTree = "<group>"; };
+		107440C52AAE602500B3F15B /* StatisticsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsModel.swift; sourceTree = "<group>"; };
+		107440C82AAF472600B3F15B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		109D176B2ADDC5A700F6424F /* PracticeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeRouter.swift; sourceTree = "<group>"; };
+		10A7D0EC2AE1C36200D55604 /* MetronomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeViewModel.swift; sourceTree = "<group>"; };
+		10C3DE582A98D0D700768ED7 /* NewModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModuleView.swift; sourceTree = "<group>"; };
+		10C3DE5A2A98DE4300768ED7 /* NewModuleClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewModuleClassListView.swift; sourceTree = "<group>"; };
+		10C3DE5C2A98F5CD00768ED7 /* ModuleDeletableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDeletableCell.swift; sourceTree = "<group>"; };
+		10F4A1A82AAA1AE400B044E2 /* CalendarSheetInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSheetInfoView.swift; sourceTree = "<group>"; };
+		10F4A1AA2AAA22A300B044E2 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		10F4A1AC2AAA4D1600B044E2 /* ExportContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportContentView.swift; sourceTree = "<group>"; };
+		10F4A1AE2AAA8A0400B044E2 /* ImportContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportContentView.swift; sourceTree = "<group>"; };
+		10F4A1B12AAB5B0A00B044E2 /* GuitarTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GuitarTime.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		104FEC712A96CA920052757D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104FEC862A96CA980052757D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104FEC902A96CA980052757D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10269F412AB9E1B100DA83F1 /* VisualTimer */ = {
+			isa = PBXGroup;
+			children = (
+				107351402AB118D500EA24EB /* VisualTimer.swift */,
+				10269F422AB9E1D500DA83F1 /* VisualTimerViewModel.swift */,
+			);
+			path = VisualTimer;
+			sourceTree = "<group>";
+		};
+		10269F442AB9ED8F00DA83F1 /* PracticeCompleted */ = {
+			isa = PBXGroup;
+			children = (
+				104FECBC2A97FA220052757D /* PracticeCompletedView.swift */,
+				10269F452AB9EDBC00DA83F1 /* PracticeCompletedViewModel.swift */,
+			);
+			path = PracticeCompleted;
+			sourceTree = "<group>";
+		};
+		104FEC6B2A96CA920052757D = {
+			isa = PBXGroup;
+			children = (
+				104FEC762A96CA920052757D /* GuitarTime */,
+				104FEC8C2A96CA980052757D /* GuitarTimeTests */,
+				104FEC962A96CA980052757D /* GuitarTimeUITests */,
+				104FEC752A96CA920052757D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		104FEC752A96CA920052757D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				104FEC742A96CA920052757D /* GuitarTime.app */,
+				104FEC892A96CA980052757D /* GuitarTimeTests.xctest */,
+				104FEC932A96CA980052757D /* GuitarTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		104FEC762A96CA920052757D /* GuitarTime */ = {
+			isa = PBXGroup;
+			children = (
+				10F4A1B12AAB5B0A00B044E2 /* GuitarTime.entitlements */,
+				10C3DE562A98CDF300768ED7 /* Storaging */,
+				10C3DE542A98CDC800768ED7 /* Scenes */,
+				10C3DE532A98CDA700768ED7 /* Model */,
+				10C3DE522A98CD7A00768ED7 /* Components */,
+				104FEC772A96CA920052757D /* GuitarTimeApp.swift */,
+				107440C82AAF472600B3F15B /* HomeView.swift */,
+				104FEC792A96CA920052757D /* ContentView.swift */,
+				104FECAC2A97727E0052757D /* TabBarView.swift */,
+				107440C72AAF416200B3F15B /* Helpers */,
+				104FEC7B2A96CA970052757D /* Assets.xcassets */,
+				104FEC7D2A96CA970052757D /* Preview Content */,
+			);
+			path = GuitarTime;
+			sourceTree = "<group>";
+		};
+		104FEC7D2A96CA970052757D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				104FEC7E2A96CA970052757D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		104FEC8C2A96CA980052757D /* GuitarTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				104FEC8D2A96CA980052757D /* GuitarTimeTests.swift */,
+			);
+			path = GuitarTimeTests;
+			sourceTree = "<group>";
+		};
+		104FEC962A96CA980052757D /* GuitarTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				104FEC972A96CA980052757D /* GuitarTimeUITests.swift */,
+				104FEC992A96CA980052757D /* GuitarTimeUITestsLaunchTests.swift */,
+			);
+			path = GuitarTimeUITests;
+			sourceTree = "<group>";
+		};
+		1067C31D2A9A741E004A1FC8 /* ToolsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				10A7D0EE2AE1C38F00D55604 /* Metronome */,
+				107440C42AAE5FF900B3F15B /* Statistics */,
+				1067C31B2A9A7417004A1FC8 /* ToolsView.swift */,
+				1067C3222A9AA325004A1FC8 /* ChordListView.swift */,
+				10407C2E2AA541C000CE4AEA /* ChordCarrouselView.swift */,
+				103D95012AA8BC7900F6409F /* NewChordView.swift */,
+				103D95032AA8F81700F6409F /* RemoveContentView.swift */,
+				10F4A1A82AAA1AE400B044E2 /* CalendarSheetInfoView.swift */,
+				103D95052AA904B900F6409F /* MonthCalendarView.swift */,
+				10F4A1AC2AAA4D1600B044E2 /* ExportContentView.swift */,
+				10F4A1AE2AAA8A0400B044E2 /* ImportContentView.swift */,
+			);
+			path = ToolsFlow;
+			sourceTree = "<group>";
+		};
+		107351422AB3BC4600EA24EB /* PracticeRoutine */ = {
+			isa = PBXGroup;
+			children = (
+				104FECB42A97A2BF0052757D /* PracticeRoutineView.swift */,
+			);
+			path = PracticeRoutine;
+			sourceTree = "<group>";
+		};
+		107440C42AAE5FF900B3F15B /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				107440C52AAE602500B3F15B /* StatisticsModel.swift */,
+				102F66192AAB8F5E0078C380 /* StatisticsView.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		107440C72AAF416200B3F15B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				10F4A1AA2AAA22A300B044E2 /* CalendarHelper.swift */,
+				107440C02AAE552F00B3F15B /* StatisticsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		109D176A2ADDC24500F6424F /* ModuleDescription */ = {
+			isa = PBXGroup;
+			children = (
+				104FECB22A978AF50052757D /* ModuleDescriptionView.swift */,
+				109D176B2ADDC5A700F6424F /* PracticeRouter.swift */,
+			);
+			path = ModuleDescription;
+			sourceTree = "<group>";
+		};
+		10A7D0EE2AE1C38F00D55604 /* Metronome */ = {
+			isa = PBXGroup;
+			children = (
+				10A7D0EC2AE1C36200D55604 /* MetronomeViewModel.swift */,
+				1067C31E2A9A7761004A1FC8 /* MetronomeView.swift */,
+			);
+			path = Metronome;
+			sourceTree = "<group>";
+		};
+		10A7D0EF2AE1C76C00D55604 /* NewModule */ = {
+			isa = PBXGroup;
+			children = (
+				10C3DE5A2A98DE4300768ED7 /* NewModuleClassListView.swift */,
+				10C3DE582A98D0D700768ED7 /* NewModuleView.swift */,
+			);
+			path = NewModule;
+			sourceTree = "<group>";
+		};
+		10C3DE522A98CD7A00768ED7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				10269F412AB9E1B100DA83F1 /* VisualTimer */,
+				104FECB82A97D44F0052757D /* ChordView.swift */,
+				104FECBA2A97EED10052757D /* ClassButtonGroup.swift */,
+				10C3DE5C2A98F5CD00768ED7 /* ModuleDeletableCell.swift */,
+				1067C3202A9A9E1A004A1FC8 /* CircularButton.swift */,
+				107440C22AAE591B00B3F15B /* CustomShadowCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		10C3DE532A98CDA700768ED7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				104FECAA2A96DF840052757D /* PersistenceDataModels.swift */,
+				104FECB02A97879F0052757D /* StringsFile.swift */,
+				104FECB62A97A64D0052757D /* PreviewMocks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		10C3DE542A98CDC800768ED7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				10269F442AB9ED8F00DA83F1 /* PracticeCompleted */,
+				107351422AB3BC4600EA24EB /* PracticeRoutine */,
+				109D176A2ADDC24500F6424F /* ModuleDescription */,
+				10A7D0EF2AE1C76C00D55604 /* NewModule */,
+				10C3DE552A98CDD300768ED7 /* ModulesFlow */,
+				1067C31D2A9A741E004A1FC8 /* ToolsFlow */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		10C3DE552A98CDD300768ED7 /* ModulesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				104FECAE2A9779370052757D /* ModulesView.swift */,
+			);
+			path = ModulesFlow;
+			sourceTree = "<group>";
+		};
+		10C3DE562A98CDF300768ED7 /* Storaging */ = {
+			isa = PBXGroup;
+			children = (
+				104FEC822A96CA970052757D /* GuitarTime.xcdatamodeld */,
+				104FEC802A96CA970052757D /* Persistence.swift */,
+				104FECBE2A980A250052757D /* PersistenceService.swift */,
+			);
+			path = Storaging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		104FEC732A96CA920052757D /* GuitarTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104FEC9D2A96CA980052757D /* Build configuration list for PBXNativeTarget "GuitarTime" */;
+			buildPhases = (
+				104FEC702A96CA920052757D /* Sources */,
+				104FEC712A96CA920052757D /* Frameworks */,
+				104FEC722A96CA920052757D /* Resources */,
+				10269F472ABA0F2600DA83F1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuitarTime;
+			productName = GuitarTime;
+			productReference = 104FEC742A96CA920052757D /* GuitarTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		104FEC882A96CA980052757D /* GuitarTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104FECA02A96CA980052757D /* Build configuration list for PBXNativeTarget "GuitarTimeTests" */;
+			buildPhases = (
+				104FEC852A96CA980052757D /* Sources */,
+				104FEC862A96CA980052757D /* Frameworks */,
+				104FEC872A96CA980052757D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104FEC8B2A96CA980052757D /* PBXTargetDependency */,
+			);
+			name = GuitarTimeTests;
+			productName = GuitarTimeTests;
+			productReference = 104FEC892A96CA980052757D /* GuitarTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		104FEC922A96CA980052757D /* GuitarTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104FECA32A96CA980052757D /* Build configuration list for PBXNativeTarget "GuitarTimeUITests" */;
+			buildPhases = (
+				104FEC8F2A96CA980052757D /* Sources */,
+				104FEC902A96CA980052757D /* Frameworks */,
+				104FEC912A96CA980052757D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104FEC952A96CA980052757D /* PBXTargetDependency */,
+			);
+			name = GuitarTimeUITests;
+			productName = GuitarTimeUITests;
+			productReference = 104FEC932A96CA980052757D /* GuitarTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104FEC6C2A96CA920052757D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					104FEC732A96CA920052757D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					104FEC882A96CA980052757D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 104FEC732A96CA920052757D;
+					};
+					104FEC922A96CA980052757D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 104FEC732A96CA920052757D;
+					};
+				};
+			};
+			buildConfigurationList = 104FEC6F2A96CA920052757D /* Build configuration list for PBXProject "GuitarTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 104FEC6B2A96CA920052757D;
+			productRefGroup = 104FEC752A96CA920052757D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104FEC732A96CA920052757D /* GuitarTime */,
+				104FEC882A96CA980052757D /* GuitarTimeTests */,
+				104FEC922A96CA980052757D /* GuitarTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		104FEC722A96CA920052757D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104FEC7F2A96CA970052757D /* Preview Assets.xcassets in Resources */,
+				104FEC7C2A96CA970052757D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104FEC872A96CA980052757D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104FEC912A96CA980052757D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10269F472ABA0F2600DA83F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nTAGS=\"TODO:|FIXME:\"\nERRORTAG=\"ERROR:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		104FEC702A96CA920052757D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104FEC812A96CA970052757D /* Persistence.swift in Sources */,
+				107351412AB118D500EA24EB /* VisualTimer.swift in Sources */,
+				10269F462AB9EDBC00DA83F1 /* PracticeCompletedViewModel.swift in Sources */,
+				104FECB92A97D44F0052757D /* ChordView.swift in Sources */,
+				103D95022AA8BC7900F6409F /* NewChordView.swift in Sources */,
+				10A7D0ED2AE1C36200D55604 /* MetronomeViewModel.swift in Sources */,
+				104FECAB2A96DF840052757D /* PersistenceDataModels.swift in Sources */,
+				104FECBD2A97FA220052757D /* PracticeCompletedView.swift in Sources */,
+				103D95062AA904B900F6409F /* MonthCalendarView.swift in Sources */,
+				10269F432AB9E1D500DA83F1 /* VisualTimerViewModel.swift in Sources */,
+				104FEC7A2A96CA920052757D /* ContentView.swift in Sources */,
+				102F661A2AAB8F5E0078C380 /* StatisticsView.swift in Sources */,
+				107440C92AAF472600B3F15B /* HomeView.swift in Sources */,
+				104FEC842A96CA970052757D /* GuitarTime.xcdatamodeld in Sources */,
+				10C3DE5D2A98F5CD00768ED7 /* ModuleDeletableCell.swift in Sources */,
+				10F4A1AD2AAA4D1600B044E2 /* ExportContentView.swift in Sources */,
+				104FECAF2A9779370052757D /* ModulesView.swift in Sources */,
+				104FECAD2A97727E0052757D /* TabBarView.swift in Sources */,
+				10407C2F2AA541C000CE4AEA /* ChordCarrouselView.swift in Sources */,
+				1067C31C2A9A7417004A1FC8 /* ToolsView.swift in Sources */,
+				10F4A1AB2AAA22A300B044E2 /* CalendarHelper.swift in Sources */,
+				10C3DE5B2A98DE4300768ED7 /* NewModuleClassListView.swift in Sources */,
+				1067C31F2A9A7761004A1FC8 /* MetronomeView.swift in Sources */,
+				104FECB32A978AF50052757D /* ModuleDescriptionView.swift in Sources */,
+				10C3DE592A98D0D700768ED7 /* NewModuleView.swift in Sources */,
+				107440C62AAE602500B3F15B /* StatisticsModel.swift in Sources */,
+				104FECB12A97879F0052757D /* StringsFile.swift in Sources */,
+				10F4A1A92AAA1AE400B044E2 /* CalendarSheetInfoView.swift in Sources */,
+				104FECBF2A980A250052757D /* PersistenceService.swift in Sources */,
+				104FECB72A97A64D0052757D /* PreviewMocks.swift in Sources */,
+				10F4A1AF2AAA8A0400B044E2 /* ImportContentView.swift in Sources */,
+				104FECB52A97A2BF0052757D /* PracticeRoutineView.swift in Sources */,
+				104FECBB2A97EED10052757D /* ClassButtonGroup.swift in Sources */,
+				1067C3232A9AA325004A1FC8 /* ChordListView.swift in Sources */,
+				107440C12AAE552F00B3F15B /* StatisticsHelper.swift in Sources */,
+				107440C32AAE591B00B3F15B /* CustomShadowCell.swift in Sources */,
+				104FEC782A96CA920052757D /* GuitarTimeApp.swift in Sources */,
+				1067C3212A9A9E1B004A1FC8 /* CircularButton.swift in Sources */,
+				109D176C2ADDC5A700F6424F /* PracticeRouter.swift in Sources */,
+				103D95042AA8F81700F6409F /* RemoveContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104FEC852A96CA980052757D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104FEC8E2A96CA980052757D /* GuitarTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104FEC8F2A96CA980052757D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104FEC982A96CA980052757D /* GuitarTimeUITests.swift in Sources */,
+				104FEC9A2A96CA980052757D /* GuitarTimeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		104FEC8B2A96CA980052757D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 104FEC732A96CA920052757D /* GuitarTime */;
+			targetProxy = 104FEC8A2A96CA980052757D /* PBXContainerItemProxy */;
+		};
+		104FEC952A96CA980052757D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 104FEC732A96CA920052757D /* GuitarTime */;
+			targetProxy = 104FEC942A96CA980052757D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		104FEC9B2A96CA980052757D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		104FEC9C2A96CA980052757D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		104FEC9E2A96CA980052757D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GuitarTime/GuitarTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GuitarTime/Preview Content\"";
+				DEVELOPMENT_TEAM = C6V6777MT9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuitarTime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carolineviana.GuitarTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		104FEC9F2A96CA980052757D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GuitarTime/GuitarTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GuitarTime/Preview Content\"";
+				DEVELOPMENT_TEAM = C6V6777MT9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GuitarTime/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carolineviana.GuitarTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		104FECA12A96CA980052757D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carolineviana.GuitarTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuitarTime";
+			};
+			name = Debug;
+		};
+		104FECA22A96CA980052757D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carolineviana.GuitarTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuitarTime.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuitarTime";
+			};
+			name = Release;
+		};
+		104FECA42A96CA980052757D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carolineviana.GuitarTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuitarTime;
+			};
+			name = Debug;
+		};
+		104FECA52A96CA980052757D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = carolineviana.GuitarTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GuitarTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104FEC6F2A96CA920052757D /* Build configuration list for PBXProject "GuitarTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104FEC9B2A96CA980052757D /* Debug */,
+				104FEC9C2A96CA980052757D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104FEC9D2A96CA980052757D /* Build configuration list for PBXNativeTarget "GuitarTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104FEC9E2A96CA980052757D /* Debug */,
+				104FEC9F2A96CA980052757D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104FECA02A96CA980052757D /* Build configuration list for PBXNativeTarget "GuitarTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104FECA12A96CA980052757D /* Debug */,
+				104FECA22A96CA980052757D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104FECA32A96CA980052757D /* Build configuration list for PBXNativeTarget "GuitarTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104FECA42A96CA980052757D /* Debug */,
+				104FECA52A96CA980052757D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		104FEC822A96CA970052757D /* GuitarTime.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				104FEC832A96CA970052757D /* GuitarTime.xcdatamodel */,
+			);
+			currentVersion = 104FEC832A96CA970052757D /* GuitarTime.xcdatamodel */;
+			path = GuitarTime.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 104FEC6C2A96CA920052757D /* Project object */;
+}
