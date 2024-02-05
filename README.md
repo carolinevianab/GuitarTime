@@ -1,7 +1,7 @@
 # Guitar Time
 ### Track progress, build classes and save your chords in an easy notes and practice app for guitar learners.
 
----
+![Base Color palette for the app](images/baseColorPalette.png)
 
 > [!IMPORTANT]
 > The project is currently being refactored.
