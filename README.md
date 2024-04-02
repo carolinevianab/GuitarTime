@@ -24,37 +24,51 @@ The app is being developed from scrach by me, including UI/UX, development of ne
 
 <details>
   <summary> Implentation Progress </summary>
+<br/>
+<img width="1440" alt="Guitar Time User Flow" src="https://github.com/carolinevianab/GuitarTime/assets/54085104/e63e9302-090e-4301-8601-390a5b424c2b">
   
+<br/><br/>
+
+Plan for refactoring: Split the views in categories and implement them fully one at a time. The categories are named after symbols.
+★ features: Components necessary for other views
+▲ features: Practice views
+◼ features: Module Presentation views
+⚫︎ features: Module Creation views
+꩜ features: Calendar related  views
+Others: The views that doens't fit the other criteria
+
+| ★ features      | ▲ features         | ◼ features         | ⚫︎ features            | ꩜ features    | Other          |
+|        ---      |        ---         |        ---         |        ---            |        ---     |    ---         |
+| Metronome       | Practice Routine   | Modules            | New Module            | Calendar Sheet | Home           |
+| Chord List      | Practice Completed | Module N           | New Module Class List | Statistics     | Tools          |
+| New Chord       |                    | Module Description |                       | Month Calendar | Import Content |
+| Chord Carrousel |                    |                    |                       |                | Export Content |
+|                 |                    |                    |                       |                | Remove Content |
+
+
+**Phase 1: Starting point**
 - [X] Implementation of base functionalities
-- [ ] Create visual identity
-  - [X] Define base color pallete
-  - [ ] Create wireframes for all views
-  - [ ] Low-fi prototype
-  - [ ] Hi-fi prototype
+- [X] Define base color pallete
 - [ ] Update string localization
-- [ ] Refactor views
-  - [X] Practice Routine
-  - [ ] Practice Completed
-  - [ ] Modules
-  - [ ] Module Description
-  - [ ] New Module
-  - [ ] New Module Class List
-  - [ ] Tools
-  - [ ] Metronome
-  - [ ] Chordlist
-  - [ ] Chord Carrousel
-  - [ ] New Chord
-  - [ ] Remove Content
-  - [ ] Calendar Sheet*
-  - [ ] Month Calendar
-  - [ ] Export Content
-  - [ ] Import content
-  - [ ] Chord View (component)
-  - [ ] Class Button (component)
-  - [ ] Module Deletable Cell (component)
-  - [ ] Circular Button (component)
-  - [ ] Shadow Cell (component)
-  - [ ] Home
-  - [ ] Tab Bar
+
+**Phase 2: ★ and ▲**
+- [ ] Wireframes for both features
+- [ ] Full design for both features
+- [ ] Implementation of ★ feature
+- [ ] Implementation of ▲ features
+
+**Phase 3: ◼ and ⚫︎**
+- [ ] Wireframes for both features
+- [ ] Full design for both features
+- [ ] Implementation of ◼ feature
+- [ ] Implementation of ⚫︎ features
+
+**Phase 4: ꩜ and ︎others**
+- [ ] Wireframes for both features
+- [ ] Full design for both features
+- [ ] Implementation of ꩜ feature
+- [ ] Implementation of other features
+
+The components will be refactored as needed.
   
 </details>
