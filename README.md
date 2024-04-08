@@ -30,12 +30,20 @@ The app is being developed from scrach by me, including UI/UX, development of ne
 <br/><br/>
 
 Plan for refactoring: Split the views in categories and implement them fully one at a time. The categories are named after symbols.
+
 ★ features: Components necessary for other views
+
 ▲ features: Practice views
+
 ◼ features: Module Presentation views
+
 ⚫︎ features: Module Creation views
+
 ꩜ features: Calendar related  views
+
 Others: The views that doens't fit the other criteria
+
+
 
 | ★ features      | ▲ features         | ◼ features         | ⚫︎ features            | ꩜ features    | Other          |
 |        ---      |        ---         |        ---         |        ---            |        ---     |    ---         |
@@ -49,10 +57,11 @@ Others: The views that doens't fit the other criteria
 **Phase 1: Starting point**
 - [X] Implementation of base functionalities
 - [X] Define base color pallete
-- [ ] Update string localization
+- [X] Update string localization
+- [ ] Add brazilian portuguese localization
 
 **Phase 2: ★ and ▲**
-- [ ] Wireframes for both features
+- [X] Wireframes for both features
 - [ ] Full design for both features
 - [ ] Implementation of ★ feature
 - [ ] Implementation of ▲ features
