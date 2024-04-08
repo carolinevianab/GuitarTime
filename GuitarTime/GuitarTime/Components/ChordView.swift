@@ -228,7 +228,7 @@ struct ChordView: View {
                 
                     .frame(width: w/2.3, height: w/9.8)
                 
-                Text("Is barre")
+                Text("isBarreLbl")
                     .monospaced()
                     .foregroundColor(chordToShow.isBarre
                                      ? AppColors.brandLight
@@ -251,11 +251,11 @@ struct ChordView: View {
                 ForEach(0..<6) { n in
                     
                     if chordToShow.mutedStrings.contains(stringNames[n]) {
-                        Text("x").onTapGesture {
+                        Text("xChordMark").onTapGesture {
                             toggleMutedString(forString: n)
                         }
                     } else if isOpenString(stringNames[n]) {
-                        Text("o").onTapGesture {
+                        Text("oChordMark").onTapGesture {
                             toggleMutedString(forString: n)
                         }
                     }

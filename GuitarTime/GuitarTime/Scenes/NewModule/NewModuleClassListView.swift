@@ -44,17 +44,17 @@ struct NewModuleClassListView: View {
             }
             .navigationBarHidden(true)
             .environment(\.editMode, .constant(editMode))
-            .alert(AppStrings.savingError, isPresented: $showingAlert) {
-                Button(AppStrings.okBtn, role: .cancel) {}
+            .alert("savingError", isPresented: $showingAlert) {
+                Button("okBtn", role: .cancel) {}
             } message: {
-                Text(AppStrings.newModuleClassesSaveError)
+                Text("newModuleClassesSaveError")
             }
 
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(editMode == .inactive ?
-                       AppStrings.reorderBtn : AppStrings.doneBtn,
+                       "reorderBtn" : "doneBtn",
                        action: {
                     withAnimation {
                         if editMode == .active {
@@ -68,7 +68,7 @@ struct NewModuleClassListView: View {
             }
             
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button(AppStrings.saveBtn, action: {
+                Button("saveBtn", action: {
                     print(selectedClasses)
                     for myClass in selectedClasses {
                         if myClass.duration == 0 || myClass.classChords.contains("") {

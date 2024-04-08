@@ -34,7 +34,7 @@ struct MonthCalendarView: View {
             
             HStack(alignment: .top, spacing: 20) {
                 CustomShadowCell {
-                    Text("Weekly practice").multilineTextAlignment(.center)
+                    Text("weeklyPracticeLbl").multilineTextAlignment(.center)
                     
                     Text("\(sh.last7DaysCount)/7")
                         .font(.largeTitle)
@@ -47,7 +47,7 @@ struct MonthCalendarView: View {
                 }
                 
                 CustomShadowCell {
-                    Text("Monthly practice").multilineTextAlignment(.center)
+                    Text("monthlyLbl").multilineTextAlignment(.center)
                     
                     Text("\(sh.last30DaysCount)/30")
                         .font(.largeTitle)

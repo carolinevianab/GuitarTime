@@ -122,7 +122,7 @@ struct ModuleDeletableCell: View {
     func chordPicker(for picker: Int = 1) -> some View {
         if picker == 1 {
             return Group {
-                Picker(AppStrings.chord,
+                Picker("chordLbl",
                        selection: $vm.pickedChord1) {
                     ForEach(chordList, id:\.self) { str in
                         Text(str).tag(str)
@@ -134,7 +134,7 @@ struct ModuleDeletableCell: View {
             }
         } else {
             return Group {
-                Picker(AppStrings.chord,
+                Picker("chordLbl",
                        selection: $vm.pickedChord2) {
                     ForEach(chordList, id:\.self) { str in
                         Text(str).tag(str)
@@ -159,7 +159,7 @@ struct ModuleDeletableCell: View {
     func durationPicker() -> some View {
         VStack {
             HStack {
-                Text(AppStrings.classDuration)
+                Text("classDuration")
                 
                 Spacer()
                 
@@ -231,7 +231,7 @@ struct ModuleDeletableCell: View {
     func exploringChordsCell() -> some View {
         VStack {
             durationPicker()
-            Text(AppStrings.chordsInClass)
+            Text("chordsInClass")
             chordSelector()
         }
     }
@@ -446,7 +446,7 @@ struct ModuleDeletableCell: View {
 //            timerPicker()
 //            Divider()
 //
-//            TextField(AppStrings.descriptionLabel, text: $decision1, axis: .vertical)
+//            TextField("descriptionLabel", text: $decision1, axis: .vertical)
 //                .textFieldStyle(.roundedBorder)
 //        }
 //    }

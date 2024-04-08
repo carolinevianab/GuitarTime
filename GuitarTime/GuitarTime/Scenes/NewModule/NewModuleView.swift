@@ -27,17 +27,17 @@ struct NewModuleView: View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    newModuleTextCell(AppStrings.nameLbl, bindTo: $a)
-                    newModulePickerCell(AppStrings.gradeLbl, bindTo: $b)
-                    newModuleClassesCell(AppStrings.classesLbl)
+                    newModuleTextCell(String(localized: "nameLbl"), bindTo: $a)
+                    newModulePickerCell(String(localized: "gradeLbl"), bindTo: $b)
+                    newModuleClassesCell(String(localized: "classesLbl"))
                 }
                 .padding()
             }
-            .navigationTitle(AppStrings.newModuleTitle)
+            .navigationTitle("newModuleTitle")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(AppStrings.saveBtn, action: {
+                    Button("saveBtn", action: {
                         if !a.isEmpty && b != .none && !c.isEmpty {
                             saveModule()
                         }
@@ -48,16 +48,16 @@ struct NewModuleView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(AppStrings.cancelBtn, action: {
+                    Button("cancelBtn", action: {
                         newModSheetOpen = false
                     })
                 }
             }
         }
-        .alert(AppStrings.savingError, isPresented: $showingAlert) {
-            Button(AppStrings.okBtn, role: .cancel) {}
+        .alert("savingError", isPresented: $showingAlert) {
+            Button("okBtn", role: .cancel) {}
         } message: {
-            Text(AppStrings.newModuleErrorDesc)
+            Text("newModuleErrorDesc")
         }
     }
     
@@ -114,16 +114,16 @@ struct NewModuleView: View {
             HStack {
                 Text(cellTitle).font(.callout)
                 Spacer()
-                NavigationLink(AppStrings.editBtn, destination: NewModuleClassListView(selectedClasses: $c, chordList: getChordList()))
+                NavigationLink("editBtn", destination: NewModuleClassListView(selectedClasses: $c, chordList: getChordList()))
             }
             
             Divider()
             
             if c.isEmpty {
-                Text(AppStrings.newModuleNoClasses).font(.footnote)
+                Text("newModuleNoClasses").font(.footnote)
             } else {
                 HStack {
-                    Text("Total duration:").font(.callout)
+                    Text("totalDurationLbl").font(.callout)
                     Spacer()
                     Text(totalTime())
                 }

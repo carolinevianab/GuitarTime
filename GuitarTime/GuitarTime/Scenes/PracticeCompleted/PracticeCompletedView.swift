@@ -16,7 +16,7 @@ struct PracticeCompletedView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            Text(AppStrings.finishedPracticeLbl)
+            Text("finishedPracticeLbl")
                 .font(.largeTitle)
                 .padding()
             
@@ -24,7 +24,7 @@ struct PracticeCompletedView: View {
             
             CustomShadowCell {
                 HStack {
-                    Text(AppStrings.moduleLbl)
+                    Text("moduleLbl")
                     Spacer()
                     Text("\(vm.module.moduleTitle)")
                 }
@@ -32,7 +32,7 @@ struct PracticeCompletedView: View {
             
             CustomShadowCell {
                 HStack {
-                    Text(AppStrings.totalTimeLbl)
+                    Text("totalTimeLbl")
                     Spacer()
                     Text(Utils.convertSecondsToString(vm.totalTime))
                 }
@@ -41,7 +41,7 @@ struct PracticeCompletedView: View {
             HStack {
                 if !vm.omc.isEmpty {
                     ShadowCard(width: .infinity, height: .infinity) {
-                        Text(AppStrings.omcChangesLbl)
+                        Text("omcChangesLbl")
                         Divider()
                         ForEach(vm.omc.keys.sorted(), id: \.self) { i in
                             HStack {
@@ -55,7 +55,7 @@ struct PracticeCompletedView: View {
                 
                 if !vm.pfc.isEmpty {
                     ShadowCard(width: .infinity, height: .infinity) {
-                        Text(AppStrings.pfcChangesLbl)
+                        Text("pfcChangesLbl")
                         Divider()
                         ForEach(vm.pfc.keys.sorted(), id: \.self) { i in
                             HStack {
@@ -72,7 +72,7 @@ struct PracticeCompletedView: View {
             
             
             Button(action: dismiss, label: {
-                Text(AppStrings.finishClassBtn)
+                Text("finishClassBtn")
                     .font(.title2)
                     .frame(maxWidth: .infinity)
                     .padding(8)

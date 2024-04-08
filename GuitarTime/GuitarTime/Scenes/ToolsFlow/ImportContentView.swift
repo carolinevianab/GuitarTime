@@ -26,27 +26,27 @@ struct ImportContentView: View {
     
     var body: some View {
         List {
-            Button("Import classes") {
+            Button("importClasses") {
                     importingNow = .classes
                     showFileImp = true
                 }
             
-            Button("Import modules") {
+            Button("importModules") {
                     importingNow = .modules
                     showFileImp = true
                 }
             
-            Button("Import chords") {
+            Button("importChords") {
                     importingNow = .chords
                     showFileImp = true
                 }
             
-            Button("Import practice data") {
+            Button("importPracticeData") {
                     importingNow = .practices
                     showFileImp = true
                 }
             
-            Button("Import all content") {
+            Button("importAllContent") {
                     importingNow = .all
                     showFileImp = true
                 }

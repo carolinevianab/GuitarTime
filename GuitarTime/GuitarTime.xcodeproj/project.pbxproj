@@ -34,6 +34,7 @@
 		104FECBB2A97EED10052757D /* ClassButtonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECBA2A97EED10052757D /* ClassButtonGroup.swift */; };
 		104FECBD2A97FA220052757D /* PracticeCompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECBC2A97FA220052757D /* PracticeCompletedView.swift */; };
 		104FECBF2A980A250052757D /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104FECBE2A980A250052757D /* PersistenceService.swift */; };
+		1060DF562BC420070075D99F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1060DF552BC420070075D99F /* Localizable.xcstrings */; };
 		1067C31C2A9A7417004A1FC8 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C31B2A9A7417004A1FC8 /* ToolsView.swift */; };
 		1067C31F2A9A7761004A1FC8 /* MetronomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C31E2A9A7761004A1FC8 /* MetronomeView.swift */; };
 		1067C3212A9A9E1B004A1FC8 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1067C3202A9A9E1A004A1FC8 /* CircularButton.swift */; };
@@ -102,6 +103,7 @@
 		104FECBA2A97EED10052757D /* ClassButtonGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassButtonGroup.swift; sourceTree = "<group>"; };
 		104FECBC2A97FA220052757D /* PracticeCompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeCompletedView.swift; sourceTree = "<group>"; };
 		104FECBE2A980A250052757D /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		1060DF552BC420070075D99F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1067C31B2A9A7417004A1FC8 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		1067C31E2A9A7761004A1FC8 /* MetronomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeView.swift; sourceTree = "<group>"; };
 		1067C3202A9A9E1A004A1FC8 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 		10C3DE532A98CDA700768ED7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1060DF552BC420070075D99F /* Localizable.xcstrings */,
 				104FECAA2A96DF840052757D /* PersistenceDataModels.swift */,
 				104FECB02A97879F0052757D /* StringsFile.swift */,
 				104FECB62A97A64D0052757D /* PreviewMocks.swift */,
@@ -442,6 +445,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 104FEC6B2A96CA920052757D;
 			productRefGroup = 104FEC752A96CA920052757D /* Products */;
@@ -462,6 +466,7 @@
 			files = (
 				104FEC7F2A96CA970052757D /* Preview Assets.xcassets in Resources */,
 				104FEC7C2A96CA970052757D /* Assets.xcassets in Resources */,
+				1060DF562BC420070075D99F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

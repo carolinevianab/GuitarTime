@@ -20,14 +20,14 @@ struct ChordCarrouselView: View {
         VStack {
             if chords.isEmpty {
                 VStack {
-                    Text(AppStrings.noChordsTitle)
+                    Text("noChordsTitle")
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.secondary)
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .padding()
                     
-                    Text(AppStrings.noChordsDesc)
+                    Text("noChordsDesc")
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(UIColor.tertiaryLabel))
                         .fontWeight(.medium)

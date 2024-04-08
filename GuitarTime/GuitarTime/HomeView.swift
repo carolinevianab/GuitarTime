@@ -48,7 +48,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
                 
                 VStack(alignment: .leading) {
-                    Text("Today's module")
+                    Text("dailyModuleTitle")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -68,7 +68,7 @@ struct HomeView: View {
             
             HStack {
                 CustomShadowCell {
-                    Text("Weekly practice").multilineTextAlignment(.center)
+                    Text("weeklyPracticeLbl").multilineTextAlignment(.center)
                     
                     Text("\(sh.last7DaysCount)/7")
                         .font(.largeTitle)
@@ -76,7 +76,7 @@ struct HomeView: View {
                 }
                 
                 CustomShadowCell {
-                    Text("Monthly practice").multilineTextAlignment(.center)
+                    Text("monthlyLbl").multilineTextAlignment(.center)
                     
                     Text("\(sh.last30DaysCount)/30")
                         .font(.largeTitle)

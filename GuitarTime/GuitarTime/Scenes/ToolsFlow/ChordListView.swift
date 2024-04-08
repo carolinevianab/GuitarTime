@@ -55,7 +55,7 @@ struct ChordListView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: { showSheet = true }) {
-                    Label(AppStrings.addChord, systemImage: AppStrings.sysimgPlus)
+                    Label("addChord", systemImage: AppStrings.sysimgPlus)
                 }
             }
         }
@@ -78,7 +78,7 @@ struct ChordListView: View {
     
     func chordCollectionCell(_ chord: ChordCategory?) -> some View {
         guard let c = chord else {
-            return createCell(name: AppStrings.favoritedChords, forChord: 0)
+            return createCell(name: String(localized: "favoritedChords"), forChord: 0)
         }
         
         return createCell(name: c.chordName, forChord: c.rawValue)
@@ -91,7 +91,7 @@ struct ChordListView: View {
             viewModel.navigateToChordCarrousel(with: name,
                                                chords: forChord)
         }, label: {
-            if name == AppStrings.favoritedChords {
+            if name == String(localized: "favoritedChords") {
                 Image(systemName:  AppStrings.sysimgStarFill)
                     .resizable()
                     .aspectRatio(contentMode: .fit)

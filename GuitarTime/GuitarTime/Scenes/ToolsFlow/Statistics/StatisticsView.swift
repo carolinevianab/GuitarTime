@@ -45,7 +45,7 @@ struct StatisticsView: View {
     func lastNthGroupCell() -> some View {
         HStack(alignment: .top, spacing: 20) {
             CustomShadowCell {
-                Text(AppStrings.weeklyLbl).multilineTextAlignment(.center)
+                Text("weeklyPracticeLbl").multilineTextAlignment(.center)
                 
                 Text("\(sh.last7DaysCount)/7")
                     .font(.largeTitle)
@@ -53,7 +53,7 @@ struct StatisticsView: View {
             }
             
             CustomShadowCell {
-                Text(AppStrings.monthlyLbl).multilineTextAlignment(.center)
+                Text("monthlyLbl").multilineTextAlignment(.center)
                 
                 Text("\(sh.last30DaysCount)/30")
                     .font(.largeTitle)
@@ -127,7 +127,7 @@ struct StatisticsView: View {
     func omcGraphCell() -> some View {
         CustomShadowCell {
             HStack {
-                Text("One Minute Changes").font(.subheadline)
+                Text("omcTitle").font(.subheadline)
                 
                 Spacer()
                 
@@ -146,8 +146,8 @@ struct StatisticsView: View {
                 ForEach(sh.omcSelected, id: \.self) { i in
                     let x = i.day, y = i.changes
                     LineMark(
-                        x: .value("Category", x),
-                        y: .value("Value", y),
+                        x: .value("categoryLbl", x),
+                        y: .value("valueLbl", y),
                         series: .value("Company", "A")
                     ).foregroundStyle(.blue)
                         .opacity(shouldShowItems(isOmc: true, line: 1, isAnn: false))
@@ -155,8 +155,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.omcSelected, id: \.self) { i in
                     PointMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes)
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes)
                     ).foregroundStyle(.blue)
                         .opacity(shouldShowItems(isOmc: true, line: 1, isAnn: false))
                         .annotation(position: .top, spacing: 0) {
@@ -166,8 +166,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.omcAo5, id: \.self) { i in
                     LineMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes),
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes),
                         series: .value("Company", "B")
                     ).foregroundStyle(.orange)
                         .opacity(shouldShowItems(isOmc: true, line: 2, isAnn: false))
@@ -175,8 +175,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.omcAo5, id: \.self) { i in
                     PointMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes)
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes)
                     ).foregroundStyle(.orange)
                         .opacity(shouldShowItems(isOmc: true, line: 2, isAnn: false))
                         .annotation(position: .top, spacing: 0) {
@@ -186,8 +186,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.omcAo10, id: \.self) { i in
                     LineMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes),
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes),
                         series: .value("Company", "C")
                     ).foregroundStyle(.green)
                         .opacity(shouldShowItems(isOmc: true, line: 3, isAnn: false))
@@ -195,8 +195,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.omcAo10, id: \.self) { i in
                     PointMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes)
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes)
                     ).foregroundStyle(.green)
                         .opacity(shouldShowItems(isOmc: true, line: 3, isAnn: false))
                         .annotation(position: .top, spacing: 0) {
@@ -216,7 +216,7 @@ struct StatisticsView: View {
     func pfcGraphCell() -> some View {
         CustomShadowCell {
             HStack {
-                Text("Perfect Fast Changes").font(.subheadline)
+                Text("pfcTitle").font(.subheadline)
                 
                 Spacer()
                 
@@ -236,8 +236,8 @@ struct StatisticsView: View {
                 ForEach(sh.pfcSelected, id: \.self) { i in
                     let x = i.day, y = i.changes
                     LineMark(
-                        x: .value("Category", x),
-                        y: .value("Value", y),
+                        x: .value("categoryLbl", x),
+                        y: .value("valueLbl", y),
                         series: .value("Company", "A")
                     ).foregroundStyle(.blue)
                         .opacity(shouldShowItems(isOmc: false, line: 1, isAnn: false))
@@ -245,8 +245,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.pfcSelected, id: \.self) { i in
                     PointMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes)
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes)
                     ).foregroundStyle(.blue)
                         .opacity(shouldShowItems(isOmc: false, line: 1, isAnn: false))
                         .annotation(position: .top, spacing: 0) {
@@ -256,8 +256,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.pfcAo5, id: \.self) { i in
                     LineMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes),
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes),
                         series: .value("Company", "B")
                     ).foregroundStyle(.orange)
                         .opacity(shouldShowItems(isOmc: false, line: 2, isAnn: false))
@@ -265,8 +265,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.pfcAo5, id: \.self) { i in
                     PointMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes)
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes)
                     ).foregroundStyle(.orange)
                         .opacity(shouldShowItems(isOmc: false, line: 2, isAnn: false))
                         .annotation(position: .top, spacing: 0) {
@@ -276,8 +276,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.pfcAo10, id: \.self) { i in
                     LineMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes),
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes),
                         series: .value("Company", "C")
                     ).foregroundStyle(.green)
                         .opacity(shouldShowItems(isOmc: false, line: 3, isAnn: false))
@@ -285,8 +285,8 @@ struct StatisticsView: View {
                 
                 ForEach(sh.pfcAo10, id: \.self) { i in
                     PointMark(
-                        x: .value("Category", i.day),
-                        y: .value("Value", i.changes)
+                        x: .value("categoryLbl", i.day),
+                        y: .value("valueLbl", i.changes)
                     ).foregroundStyle(.green)
                         .opacity(shouldShowItems(isOmc: false, line: 3, isAnn: false))
                         .annotation(position: .top, spacing: 0) {
@@ -304,12 +304,12 @@ struct StatisticsView: View {
     
     func avgTimesCell() -> some View {
         CustomShadowCell {
-            Text("Average Practice time (last 30 days)").padding()
+            Text("avgPracticeMonth").padding()
             Text(Utils.convertSecondsToString(sh.avgTimeMonth)).font(.title)
             
             Divider()
             
-            Text("Average times by module (all time)").font(.callout).padding()
+            Text("avgByModule").font(.callout).padding()
             
             ForEach(sh.avgTimeByModule.keys.sorted(), id: \.self) { key in
                 HStack {

@@ -38,14 +38,14 @@ struct ExportContentView: View {
     var body: some View {
         List {
             Section {
-                ShareLink("Export classes", item: exportClasses())
-                ShareLink("Export modules", item: exportModules())
-                ShareLink("Export chords", item: exportChords())
-                ShareLink("Export practice data", item: exportPracticeData())
+                ShareLink("exportClasses", item: exportClasses())
+                ShareLink("exportModules", item: exportModules())
+                ShareLink("exportChords", item: exportChords())
+                ShareLink("exportPracticeData", item: exportPracticeData())
             }
             
             Section {
-                Button("Export all content", action: {
+                Button("exportAllContent", action: {
                     exportAllContent()
                 })
             }

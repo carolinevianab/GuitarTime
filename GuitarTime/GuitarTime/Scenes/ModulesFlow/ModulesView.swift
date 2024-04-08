@@ -31,26 +31,26 @@ struct ModulesView: View {
         NavigationStack {
             if moduleList.isEmpty {
                 VStack {
-                    Text(AppStrings.noModulesTitle)
+                    Text("noModulesTitle")
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.secondary)
                         .font(.largeTitle)
                         .fontWeight(.semibold)
                         .padding()
                     
-                    Text(AppStrings.noModulesDesc)
+                    Text("noModulesDesc")
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(UIColor.tertiaryLabel))
                         .fontWeight(.medium)
                         .padding(.horizontal)
                         .padding()
                 }
-                .navigationTitle(AppStrings.modulesTitle)
+                .navigationTitle("modulesTitle")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem {
                         Button(action: addItem) {
-                            Label(AppStrings.addModule, systemImage: AppStrings.sysimgPlus)
+                            Label("addModule", systemImage: AppStrings.sysimgPlus)
                         }
                     }
                 }
@@ -67,12 +67,12 @@ struct ModulesView: View {
                         }
                     }
                 }
-                .navigationTitle(AppStrings.modulesTitle)
+                .navigationTitle("modulesTitle")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem {
                         Button(action: addItem) {
-                            Label(AppStrings.addModule, systemImage: AppStrings.sysimgPlus)
+                            Label("addModule", systemImage: AppStrings.sysimgPlus)
                         }
                     }
                 }

@@ -22,17 +22,17 @@ struct NewChordView: View {
             ScrollView {
                 
                 VStack {
-                    newChordTextCell(AppStrings.nameLbl, bindTo: $chordName)
-                    newChordPickerCell(AppStrings.categoryLbl)
+                    newChordTextCell(String(localized: "nameLbl"), bindTo: $chordName)
+                    newChordPickerCell(String(localized: "categoryLbl"))
                     newChordEditChord()
                 }.padding()
                 
             }
-            .navigationTitle(AppStrings.newChordTitle)
+            .navigationTitle("newChordTitle")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(AppStrings.saveBtn, action: {
+                    Button("saveBtn", action: {
                         if !chordName.isEmpty &&
                             builtedChord.mutedStrings.count != 6 {
                             saveModule()
@@ -44,7 +44,7 @@ struct NewChordView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(AppStrings.cancelBtn, action: {
+                    Button("cancelBtn", action: {
                         isSelfOpen = false
                     })
                 }
@@ -52,10 +52,10 @@ struct NewChordView: View {
             
             
         }
-        .alert(AppStrings.savingError, isPresented: $showingAlert) {
-            Button(AppStrings.okBtn, role: .cancel) {}
+        .alert("savingError", isPresented: $showingAlert) {
+            Button("okBtn", role: .cancel) {}
         } message: {
-            Text(AppStrings.newChordErrorDesc)
+            Text("newChordErrorDesc")
         }
         
         

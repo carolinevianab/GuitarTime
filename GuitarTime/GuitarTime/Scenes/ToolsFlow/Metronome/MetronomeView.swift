@@ -103,7 +103,7 @@ struct MetronomeView: View {
                 }
             } else {
                 HStack {
-                    Text(AppStrings.timeSignLbl)
+                    Text("timeSignLbl")
                     Spacer()
                     
                     Picker("", selection: $timeSignature, content: {
@@ -120,7 +120,7 @@ struct MetronomeView: View {
                 }
                 
                 HStack {
-                    Text(AppStrings.bpm)
+                    Text("BPM")
                     Spacer()
                     
                     Picker("", selection: $vm.bpm, content: {

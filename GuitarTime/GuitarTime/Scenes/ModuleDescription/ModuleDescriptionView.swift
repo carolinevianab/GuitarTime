@@ -19,7 +19,7 @@ struct ModuleDescriptionView: View {
             VStack {
                 CustomShadowCell {
                     HStack {
-                        Text(AppStrings.classDuration)
+                        Text("classDuration")
                         Spacer()
                         Text(getModuleDuration())
                             .font(.footnote)
@@ -27,7 +27,7 @@ struct ModuleDescriptionView: View {
                     }
                 }
                 
-                Text(AppStrings.modDesc).padding(.top)
+                Text("modDesc").padding(.top)
                 
                 ForEach(moduleClasses.moduleClasses) { classs in
                     classcell(name: classs.classTitle,
@@ -38,7 +38,7 @@ struct ModuleDescriptionView: View {
                 
                 // Button
                 NavigationLink(value: PracticeRouter.ScreenList.PracticeRoutine, label: {
-                    Text(AppStrings.startBtn)
+                    Text("startBtn")
                         .font(.title2)
                         .frame(maxWidth: .infinity)
                         .padding(8)
@@ -61,7 +61,7 @@ struct ModuleDescriptionView: View {
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button(AppStrings.cancelBtn, role: .cancel, action: dismissModal)
+                    Button("cancelBtn", role: .cancel, action: dismissModal)
                 }
             }
         }

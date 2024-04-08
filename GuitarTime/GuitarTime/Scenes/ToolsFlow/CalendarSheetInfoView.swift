@@ -60,9 +60,9 @@ struct CalendarSheetInfoView: View {
                         
                         Spacer()
                         
-                        Text("There's no content for this day D:")
-                        Text("That means you didn't practice this day.")
-                        Text("GO PRACTICE :D")
+                        Text("noContentTitle")
+                        Text("noContentDesc")
+                        Text("noContentAction")
                         
                         Spacer()
                     }

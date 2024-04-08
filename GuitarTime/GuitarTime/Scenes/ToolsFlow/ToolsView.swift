@@ -49,23 +49,23 @@ struct ToolsView: View {
     var body: some View {
         NavigationStack(path: $viewModel.navigationPath) {
             List {
-                Section("Guitar Tools") {
+                Section("guitarToolsSectionTitle") {
                     
-                    NavigationLink(AppStrings.metronomeTitle, value: ToolsNavigation.ScreenList.Metronome)
+                    NavigationLink("metronomeTitle", value: ToolsNavigation.ScreenList.Metronome)
                     
-                    NavigationLink(AppStrings.chordsTitle, value: ToolsNavigation.ScreenList.ChordList)
+                    NavigationLink("chordsTitle", value: ToolsNavigation.ScreenList.ChordList)
                     
-                    NavigationLink(AppStrings.statisticsTitle, value: ToolsNavigation.ScreenList.Statistics)
+                    NavigationLink("statisticsTitle", value: ToolsNavigation.ScreenList.Statistics)
                     
-                    NavigationLink(AppStrings.historyTitle, value: ToolsNavigation.ScreenList.History)
+                    NavigationLink("historyTitle", value: ToolsNavigation.ScreenList.History)
                 }
                 
-                Section("App Tools") {
-                    NavigationLink(AppStrings.importTitle, value: ToolsNavigation.ScreenList.ImportContent)
+                Section("appToolsSectionTitle") {
+                    NavigationLink("importTitle", value: ToolsNavigation.ScreenList.ImportContent)
                     
-                    NavigationLink(AppStrings.exportTitle, value: ToolsNavigation.ScreenList.ExportContent)
+                    NavigationLink("exportTitle", value: ToolsNavigation.ScreenList.ExportContent)
                     
-                    NavigationLink(AppStrings.removeContentTitle, value: ToolsNavigation.ScreenList.RemoveContent)
+                    NavigationLink("removeContentTitle", value: ToolsNavigation.ScreenList.RemoveContent)
                 }
                 
                 
@@ -75,10 +75,10 @@ struct ToolsView: View {
                 switch i {
                 case .Metronome:
                     MetronomeView(isPortable: false)
-                        .navigationTitle(AppStrings.metronomeTitle)
+                        .navigationTitle("metronomeTitle")
                 case .ChordList:
                     ChordListView(viewModel: viewModel)
-                        .navigationTitle(AppStrings.chordsTitle)
+                        .navigationTitle("chordsTitle")
                 case .ChordCarrousel(let chord):
                     if chord == 0 {
                         ChordCarrouselView(chords: viewModel.chordsToShow.filter({ $0.isFavorited }))
@@ -90,22 +90,22 @@ struct ToolsView: View {
                     
                 case .Statistics:
                     StatisticsView()
-                        .navigationTitle(AppStrings.statisticsTitle)
+                        .navigationTitle("statisticsTitle")
                 case .History:
                     MonthCalendarView()
-                        .navigationTitle(AppStrings.historyTitle)
+                        .navigationTitle("historyTitle")
                 case .ImportContent:
                     ImportContentView()
-                        .navigationTitle(AppStrings.importTitle)
+                        .navigationTitle("importTitle")
                 case .ExportContent:
                     ExportContentView()
-                        .navigationTitle(AppStrings.exportTitle)
+                        .navigationTitle("exportTitle")
                 case .RemoveContent:
                     RemoveContentView()
-                        .navigationTitle(AppStrings.removeContentTitle)
+                        .navigationTitle("removeContentTitle")
                 }
             })
-            .navigationTitle(AppStrings.toolsTitle)
+            .navigationTitle("toolsTitle")
             .navigationBarTitleDisplayMode(.inline)
         }
         

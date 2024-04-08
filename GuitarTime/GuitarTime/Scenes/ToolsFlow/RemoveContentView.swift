@@ -27,21 +27,21 @@ struct RemoveContentView: View {
     
     var body: some View {
         List {
-            Section("Mod") {
+            Section("modulesTitle") {
                 ForEach(modules) { m in
                     Text(m.moduletitle ?? "Erro")
                 }
                 .onDelete(perform: deleteModule)
             }
             
-            Section("Classes") {
+            Section("classesLbl") {
                 ForEach(classes) { c in
                     Text(c.classtitle ?? "Erro")
                 }
                 .onDelete(perform: deleteClasses)
             }
             
-            Section("Chords") {
+            Section("chordsTitle") {
                 ForEach(chords) { ch in
                     Text(ch.chordname ?? "Erro")
                     

@@ -22,15 +22,15 @@ struct TabBarView: View {
             
             HomeView()
                 .environment(\.managedObjectContext, viewContext)
-                .tabItem{Label(AppStrings.homeTitle, systemImage: AppStrings.sysimgHomeTab)}
+                .tabItem{Label("homeTitle", systemImage: AppStrings.sysimgHomeTab)}
             
             ModulesView()
                 .environment(\.managedObjectContext, viewContext)
-                .tabItem{Label(AppStrings.modulesTitle, systemImage: AppStrings.sysimgModTab)}
+                .tabItem{Label("modulesTitle", systemImage: AppStrings.sysimgModTab)}
             
             ToolsView()
                 .environment(\.managedObjectContext, viewContext)
-                .tabItem{Label(AppStrings.toolsTitle, systemImage: AppStrings.sysimgToolsTab)}
+                .tabItem{Label("toolsTitle", systemImage: AppStrings.sysimgToolsTab)}
         }
     }
     

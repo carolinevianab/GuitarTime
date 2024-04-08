@@ -65,11 +65,11 @@ struct PracticeRoutineView: View {
             Spacer()
             
             setupProgressIndicator()
-                .alert(AppStrings.changeCountTitle, isPresented: $showAlertClass) {
-                    TextField(AppStrings.changeCountMessage, text: $numberOfChanges)
+                .alert("changeCountTitle", isPresented: $showAlertClass) {
+                    TextField("changeCountMessage", text: $numberOfChanges)
                         .foregroundColor(.black)
                         
-                    Button(AppStrings.okBtn, action: submitValue)
+                    Button("okBtn", action: submitValue)
                 }
                 
             
@@ -77,17 +77,17 @@ struct PracticeRoutineView: View {
         }
         .navigationBarBackButtonHidden(true)
         .onAppear() { setupData() }
-        .alert(AppStrings.leaveAlertMessage, isPresented: $showAlertLeave) {
-            Button(AppStrings.leaveAlertOptStay, role: .cancel, action: { showAlertLeave = false })
-            Button(AppStrings.leaveAlertOptLeave, role: .destructive, action: dismissModal)
+        .alert("leaveAlertMessage", isPresented: $showAlertLeave) {
+            Button("leaveAlertOptStay", role: .cancel, action: { showAlertLeave = false })
+            Button("leaveAlertOptLeave", role: .destructive, action: dismissModal)
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button(AppStrings.cancelBtn, role: .cancel, action: { showAlertLeave = true })
+                Button("cancelBtn", role: .cancel, action: { showAlertLeave = true })
             }
             
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button(AppStrings.finishClassBtn) {
+                Button("finishClassBtn") {
                     totalPracticeTime += timerVm.restartTimer()
                     
                     viewModel.navigateToCompleted(module: module, omc: stats["OMC"] ?? [:], pfc: stats["PFC"] ?? [:], totalTime: totalPracticeTime)
